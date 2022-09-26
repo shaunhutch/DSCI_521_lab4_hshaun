@@ -2,7 +2,7 @@
 title: "question7"
 author: "Shaun Hutchinson"
 date: "2022-09-26"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}

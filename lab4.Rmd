@@ -278,7 +278,11 @@ rubric={mechanics:6}
    Paste a link to these files as your answer below.
 ```
 
-YOUR ANSWER GOES HERE
+Question 8 rmd:
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hshaun/blob/master/question8.Rmd>
+
+Question 8 html
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hshaun/blob/master/question8.html>
 
 ```{block, type="alert alert-info"}
 #### Question 9 (Optional)
