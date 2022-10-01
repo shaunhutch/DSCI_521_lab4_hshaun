@@ -1,0 +1,87 @@
+---
+title: "Question 10 Slides"
+author: "Shaun Hutchinson"
+format: revealjs
+editor: visual
+---
+
+## My First Slide
+
+::: incremental
+In this presentation I will take you through several slides to highlight some of the many features of Quarto presentations.
+:::
+
+## MDS Block One Class Programming Languages
+
+In this slide I have included columns of data for the languages we use in the first block of MDS.
+
+::: columns
+::: {.column width="50%"}
+Python
+
+-   DSCI 511
+-   DSCI 521
+:::
+
+::: {.column width="50%"}
+R
+
+-   DSCI 521
+-   DSCI 523
+-   DSCI 551
+:::
+:::
+
+## R Code
+
+You can include code that only shows the code, without the output using echo:true. As demonstrated with the code for a graph on penguin Bill Length and Body Mass from the palmer penguins dataset
+
+```{r}
+#| echo: true
+library(tidyverse)
+library(palmerpenguins)
+options(repr.plot.width = 7, repr.plot.height = 5)
+penguins_forcats <- penguins |>
+                    mutate(species =fct_reorder(species, body_mass_g)) |>
+                    ggplot(mapping = aes(x = bill_length_mm, 
+                                      y = body_mass_g,
+                                     colour = species)) +
+    geom_point(size = 2) +
+    xlab("Bill length (mm)") +
+    ylab("Body mass (g)") +
+    theme_bw() +
+    theme(text = element_text(size = 18))
+penguins_forcats
+```
+
+## R Output
+
+Without using echo:true, the slide will only show the output of the graph as seen below
+
+```{r}
+
+library(tidyverse)
+library(palmerpenguins)
+options(repr.plot.width = 7, repr.plot.height = 5)
+penguins_forcats <- penguins |>
+                    mutate(species =fct_reorder(species, body_mass_g)) |>
+                    ggplot(mapping = aes(x = bill_length_mm, 
+                                      y = body_mass_g,
+                                     colour = species)) +
+    geom_point(size = 2) +
+    xlab("Bill length (mm)") +
+    ylab("Body mass (g)") +
+    theme_bw() +
+    theme(text = element_text(size = 18))
+penguins_forcats
+```
+
+## Python
+
+You can also include python code chunks in the presentation
+
+``` python
+courses = list("DSCI 511", "DSCI 521", "DSCI 523", "DSCI 551")
+for class in courses:
+  print(class)
+```

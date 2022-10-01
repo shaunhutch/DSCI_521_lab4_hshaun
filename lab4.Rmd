@@ -296,7 +296,11 @@ rubric={mechanics:1,reasoning:1}
    What do you see? How is it rendered?
 ```
 
-YOUR ANSWER GOES HERE
+<https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_hshaun/blob/master/question8.md>
+
+This file is rendered like an HTML document in github. Normally, when
+you upload an HTML document to github, you only see the code. So this is
+an easier to view document for github.
 
 ```{block, type="alert alert-info"}
 #### Question 10
